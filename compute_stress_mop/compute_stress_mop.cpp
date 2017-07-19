@@ -12,8 +12,7 @@
 ------------------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------------
-   Contributing author: Naveen Michaud-Agrawal (Johns Hopkins U)
-     K-space terms added by Stan Moore (BYU)
+   Contributing author: Nisha Chandramoorthy, MIT (email:nishac at mit dot edu)
 ------------------------------------------------------------------------- */
 
 #include <mpi.h>
