@@ -242,29 +242,7 @@ void ComputeStressMOP::pair_contribution()
 					maxcutoff=cutsq[itype][kk];
     	}   
 
-			//check for particle crossings
-			if((jtype==5 || jtype==6) && (ztmp_j <= zpoint))
-		  {
-				std::cout<<"NO!!!!!!!!!!!!!!!!!!!!!!!!! \n";
-				exit(0);
-			}
- 
-			if((itype==5 || itype==6) && (ztmp_i <= zpoint))
-			{
-				std::cout<<"NO!!!!!!!!!!!!!!!!!!!!!!!!! \n";
-				exit(0);
-			}
-			if((itype==7) && (ztmp_i >= zpoint))
-			{
-				std::cout<<"NO!!!!!!!!!!!!!!!!!!!!!!!!! \n";
-				exit(0);
-			}
-			if((jtype==7) && (ztmp_j >= zpoint))
-			{
-				std::cout<<"NO!!!!!!!!!!!!!!!!!!!!!!!!! \n";
-				exit(0);
-			}
-
+	
     	if((ztmp_j-zpoint)*(ztmp_j-zpoint)>maxcutoff)
 			{ 
 				count+=1;
